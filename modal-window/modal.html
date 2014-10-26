@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Modal Window</title>
+
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+	<link rel="stylesheet" href="modal.css">
+
+</head>
+<body>
+
+	<div class="demo">
+
+		<h1 class="demo-title">
+			Modal Window
+		</h1>
+
+		<div class="demo-canvas">
+
+			<!-- Demo content -->
+			<button type="button" class="pure-button pure-button-primary modal-toggle" data-for="#modal-content">Find out about sloths!</button>
+
+			<div class="hidden-content" id="modal-content">
+				<h1>
+					Sloths
+				</h1>
+				<p>
+					Sloths are medium-sized mammals belonging to the families Megalonychidae (two-toed
+					sloth) and Bradypodidae (three-toed sloth), classified into six species. They are
+					part of the order Pilosa and are therefore related to anteaters, which sport a
+					similar set of specialized claws. Extant sloths are arboreal (tree-dwelling)
+					residents of the jungles of Central and South America, and are known for being
+					slow-moving, and hence named "sloths". Extinct sloth species include many ground
+					sloths, some of which attained the size of elephants.
+				</p>
+			</div>
+			<!--/ Demo content -->
+
+		</div>
+
+	</div>
+
+	<script src="modal.js"></script>
+	<script>
+		var toggles = document.querySelectorAll(".modal-toggle");
+		var modal = new Modal(document.body);
+
+		Array.prototype.forEach.call(toggles, function(toggle) {
+			toggle.onclick = function() {
+				modal.open(document.querySelector(this.getAttribute("data-for")).innerHTML);
+			};
+		});
+	</script>
+
+</body>
+</html>

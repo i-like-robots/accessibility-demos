@@ -1,0 +1,141 @@
+.site-container {
+	max-width: 960px;
+	min-width: 300px;
+	margin: 0 auto;
+}
+
+a {
+	color: #37555F;
+}
+
+a:hover {
+	color: #8CADB8;
+}
+
+/* Header */
+.site-header {
+	margin: 12px 0;
+}
+
+.site-header .header-logo img {
+	display: block;
+}
+
+.site-header .header-search {
+	float: right;
+	padding-top: 75px;
+}
+
+.site-header .header-search .hidden {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+.site-header .header-search input:focus {
+	border-color: #8CADB8;
+}
+
+.site-header .header-search .pure-button {
+	background: #37555F;
+	color: #FFF;
+}
+
+/* Navigation */
+.site-nav {
+	text-align: center;
+}
+
+.site-nav .pure-menu {
+	background: #8CADB8;
+	border-radius: 4px;
+}
+
+.site-nav .pure-menu a {
+	color: #FFF;
+}
+
+.site-nav .pure-menu a:hover,
+.site-nav .pure-menu a:focus {
+	background-color: #37555F;
+}
+
+.site-nav .pure-menu a.is-selected {
+	text-decoration: underline;
+}
+
+/* Content */
+.site-content {
+	padding: 20px;
+}
+
+.site-content .content-ad {
+	margin: 20px 0;
+	text-align: center;
+}
+
+.site-content .content-ad img {
+	max-width: 100%;
+}
+
+.site-content .content-image {
+	background: #E0E0E0;
+	border: 1px solid #C6C6C6;
+	border-radius: 4px;
+	margin: 0 0 20px;
+	padding: 12px;
+}
+
+.site-content .content-caption {
+	text-align: center;
+}
+
+/* Sidebar */
+.site-sidebar {
+	padding: 20px;
+	margin: 20px 0;
+	border-radius: 4px;
+	background: #E8E9DF;
+}
+
+.site-sidebar .sidebar-aside {
+	border: 1px solid #D2D5C1;
+	background: #DDDFD0;
+	border-radius: 4px;
+	margin: 0 0 20px;
+	padding: 12px;
+}
+
+.site-sidebar .sidebar-ad {
+	text-align: center;
+}
+
+/* Footer */
+.site-footer {
+	text-align: center;
+	font-size: 14px;
+}
+
+.site-footer .pure-menu {
+	background: #37555F;
+}
+
+.site-footer .pure-menu a {
+	color: #FFF;
+}
+
+.site-footer .pure-menu a:hover,
+.site-footer .pure-menu a:focus {
+	background: #2E474F;
+}
+
+.site-footer .footer-smallprint {
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	background: #40636F;
+	color: #FFF;
+}
+
+.site-footer .footer-smallprint p {
+	padding: 20px 0 30px;
+	margin: 0 0 30px;
+}

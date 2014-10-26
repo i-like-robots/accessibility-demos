@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Expandable Content</title>
+
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+	<link rel="stylesheet" href="expandable.css">
+
+</head>
+<body>
+
+	<div class="demo">
+
+		<h1 class="demo-title">
+			Expandable Content
+		</h1>
+
+		<div class="demo-canvas">
+
+			<!-- Demo content -->
+			<div class="expandable">
+				<h2 class="expandable-summary">
+					Cats
+				</h2>
+				<div class="expandable-content" id="expandable-1">
+					<p>
+						The domestic cat is a small, usually furry, domesticated, and carnivorous mammal.
+						It is often called the housecat when kept as an indoor pet, or simply the cat when
+						there is no need to distinguish it from other felids and felines. Cats are often
+						valued by humans for companionship and their ability to hunt vermin and household
+						pests.
+					</p>
+				</div>
+			</div>
+			<div class="expandable">
+				<h2 class="expandable-summary">
+					Dogs
+				</h2>
+				<div class="expandable-content" id="expandable-2">
+					<p>
+						The domestic dog is the 31,000 year old descendant of a now extinct European Wolf
+						and a member of the Canidae family of the mammalian order Carnivora. The term
+						"domestic dog" is generally used for both domesticated and feral varieties. The dog
+						was the first domesticated animal and has been the most widely kept working, hunting,
+						and pet animal in human history. The word "dog" can also refer to the male of a canine
+						species, as opposed to the word "bitch" which refers to the female of the species.
+					</p>
+				</div>
+			</div>
+			<div class="expandable">
+				<h2 class="expandable-summary">
+					Sloths
+				</h2>
+				<div class="expandable-content" id="expandable-3">
+					<p>
+						Sloths are medium-sized mammals belonging to the families Megalonychidae (two-toed
+						sloth) and Bradypodidae (three-toed sloth), classified into six species. They are
+						part of the order Pilosa and are therefore related to anteaters, which sport a
+						similar set of specialized claws. Extant sloths are arboreal (tree-dwelling)
+						residents of the jungles of Central and South America, and are known for being
+						slow-moving, and hence named "sloths". Extinct sloth species include many ground
+						sloths, some of which attained the size of elephants.
+					</p>
+				</div>
+			</div>
+			<!--/ Demo content -->
+
+		</div>
+
+	</div>
+
+	<script src="expandable.js"></script>
+	<script>
+		var elements = document.querySelectorAll(".expandable");
+
+		Array.prototype.forEach.call(elements, function(element) {
+			new Expandable(element);
+		});
+	</script>
+
+</body>
+</html>

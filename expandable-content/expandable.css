@@ -1,0 +1,36 @@
+.expandable-summary {
+	cursor: pointer;
+}
+
+.expandable-summary button {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	color: inherit;
+	background: none;
+}
+
+.expandable-summary button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+.expandable-summary::before {
+	content: '\2193';
+	display: inline-block;
+	color: #9DACA9;
+	transition: transform .5s;
+}
+
+.expandable-summary:hover::before {
+	color: #27a1ff;
+}
+
+.is-open .expandable-summary::before {
+	transform: rotate(180deg);
+}
+
+.is-closed .expandable-summary::before {
+	transform: rotate(0);
+}
