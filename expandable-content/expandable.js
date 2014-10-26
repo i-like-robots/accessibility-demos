@@ -17,6 +17,8 @@ Expandable.prototype.init = function(open) {
     }
 
     this.summary.addEventListener('click', this.toggle.bind(this), false);
+    this.summary.setAttribute('aria-expanded', this.isOpen);
+    this.summary.setAttribute('aria-owns', this.content.id);
 };
 
 Expandable.prototype.toggle = function() {
@@ -28,5 +30,6 @@ Expandable.prototype.toggle = function() {
 
     this.target.classList.add(newClass);
     this.target.classList.remove(oldClass);
+    this.summary.setAttribute('aria-expanded', this.isOpen);
     this.content.style.display = this.isOpen ? '' : 'none';
 };
