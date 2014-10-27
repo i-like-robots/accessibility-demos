@@ -21,17 +21,20 @@
 				<div class="pure-u-1-2">
 
 					<div class="header-logo">
-						<a href="/"><img src="images/logo.png" width="240"></a>
+						<a href="/" title="Return to the home page"><img src="images/logo.png" width="240" alt="Sloth Co. logo"></a>
 					</div>
 
 				</div>
 
 				<div class="pure-u-1-2">
 
-					<div class="header-search">
+					<div class="header-search" role="search">
 						<form action="" method="get" class="pure-form">
 							<fieldset>
-								<input type="text" name="query" placeholder="Sloth facts">
+								<label>
+									<span class="hidden">Site search</span>
+									<input type="text" name="query" placeholder="Sloth facts">
+								</label>
 								<button type="submit" class="pure-button">Search</button>
 							</fieldset>
 						</form>
@@ -43,10 +46,10 @@
 
 		</div>
 
-		<div class="site-nav">
+		<div class="site-nav" role="navigation" aria-label="Main navigation">
 			<div class="pure-menu pure-menu-open pure-menu-horizontal">
 				<ul>
-					<li><a href="/" class="is-selected">About sloths</a></li>
+					<li><a href="/" class="is-selected" aria-label="Current page: About Sloths">About sloths</a></li>
 					<li><a href="/conservation.html">Sloth conservation</a></li>
 					<li><a href="/adoption.html">Sloth adoption</a></li>
 					<li><a href="/about.html">About Us</a></li>
@@ -59,7 +62,7 @@
 
 			<div class="pure-u-3-4">
 
-				<div class="site-content">
+				<div class="site-content" role="main">
 
 					<h1>
 						Sloths
@@ -73,7 +76,7 @@
 						slow-moving, and hence named "sloths". Extinct sloth species include many ground
 						sloths, some of which attained the size of elephants.
 					</p>
-					<div class="content-ad">
+					<div class="content-ad" aria-label="Advertisement">
 						<a href="https://www.duckduckgo.com"><img src="images/banner.gif"></a>
 					</div>
 					<h2>
@@ -91,12 +94,12 @@
 						leaves just out of reach. As much as two-thirds of a well-fed sloth's body weight consists of the
 						contents of its stomach, and the digestive process can take a month or more to complete.
 					</p>
-					<div class="content-image">
-						<img src="images/sloth.jpg" class="pure-img">
-						<p class="content-caption">
+					<figure class="content-image" role="group">
+						<img src="images/sloth.jpg" class="pure-img" alt="Figure 1" aria-labelledby="caption-1">
+						<figcaption class="content-caption" id="caption-1" aria-hidden="true">
 							A three-toed, suave-looking sloth in a tree in Costa Rica.
-						</p>
-					</div>
+						</figcaption>
+					</figure>
 					<h2>
 						Physiology
 					</h2>
@@ -129,7 +132,7 @@
 
 				<div class="site-sidebar">
 
-					<div class="sidebar-aside">
+					<div class="sidebar-aside" role="complementary" aria-label="Sidebar">
 						<h3>
 							Adopt a sloth
 						</h3>
@@ -138,11 +141,11 @@
 							will contribute to the continued efforts in protecting sloths and their valuable habitat.
 						</p>
 						<p>
-							<a href="/adoption.html">Click here &gt;</a> to check out our adoption page
+							<a href="/adoption.html">Check out our adoption page</a>
 						</p>
 					</div>
 
-					<div class="sidebar-ad">
+					<div class="sidebar-ad" aria-label="Advertisement">
 						<a href="https://www.duckduckgo.com"><img src="images/skyscraper.gif"></a>
 					</div>
 
@@ -152,9 +155,9 @@
 
 		</div>
 
-		<div class="site-footer">
+		<div class="site-footer" role="contentinfo">
 
-			<div class="footer-legal pure-menu pure-menu-open pure-menu-horizontal">
+			<div class="footer-legal pure-menu pure-menu-open pure-menu-horizontal" role="navigation" aria-label="Secondary navigation">
 				<ul>
 					<li><a href="/conditions.html">Terms &amp; Conditions</a></li>
 					<li><a href="/accessibility.html">Accessibility</a></li>
