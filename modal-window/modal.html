@@ -50,7 +50,7 @@
 
 		Array.prototype.forEach.call(toggles, function(toggle) {
 			toggle.onclick = function() {
-				modal.open(document.querySelector(this.getAttribute("data-for")).innerHTML);
+				modal.open(document.querySelector(this.getAttribute("data-for")).innerHTML, this.textContent);
 			};
 		});
 	</script>
